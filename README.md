@@ -1,2 +1,2 @@
 # projects
-whatever I want to do
+whatever I want to do today
