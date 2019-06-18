@@ -271,3 +271,39 @@ courses =  {'Andrew Chalkley': ['jQuery Basics', 'Node.js Basics', "c"], 'Kennet
 
 stats = stats(courses)
 print(stats)
+
+
+
+
+
+course_minutes = {"Python Basics": 232, "Django": 237, "Flask Basics": 	189, "Java Basics": 133}
+
+#items returns a tuple of course and minutes which we can unpack into variables automatically
+for course, minutes in course_minutes.items():
+	print("{} is {} minutes long".format(course, minutes))
+
+
+#enumerate function
+#list(enumerate("abc"))
+# you don't have to use all the variables returned you can store it in a temp holder _
+# for index, _ in enumerate(my_list):
+# the list item won't even be available in the loop but you'll still have the step count
+# 
+
+for index, letter in enumerate("abcdefghijklmnopqrstuvwxyz"):
+	print("{}: {}".format(index+1, letter))
+
+
+my_dict = {'name': 'Kenneth', "age": 33}
+for key, value in my_dict.items():
+	print("{}: {}".format(key, value))
+
+for group in my_dict.items():
+	print("{}: {}".format(*group))
+
+my_list = [5, 2, 4, 1, 3]
+for index, value in enumerate(my_list):
+	print("{}: {}".format(index, value))
+
+for group in enumerate(my_list):
+	print("{}: {}".format(*group))
