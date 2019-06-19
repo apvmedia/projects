@@ -1,7 +1,11 @@
 #dungeon_game.py
 
 import random
+print(random.__file__) 
+
 import os
+
+
 
 # draw grid
 # pick random location for player
