@@ -1,13 +1,13 @@
-
 class Student:
     name = "Wayne"
-	
-	def praise(self):
-		print("{} is the best!".format(self.name))
-		return "{} is the best!".format(self.name)
 
-me = Student()
+    def praise(self):
+        return "You inspire me, {}".format(self.name)
 
-print("My name is {}".format(me.name()))
+    def reassurance(self):
+        return "Chin up, {}. You'll get it next time!".format(self.name)
 
-
+    def feedback(self, grade):
+        if grade > 50:
+            return self.praise()
+        return self.reassurance()
